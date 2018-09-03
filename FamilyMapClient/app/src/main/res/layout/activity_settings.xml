@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <Switch
+        android:id="@+id/lifeLines"
+        android:layout_width="178dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Life Story Lines"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toStartOf="@+id/spinner2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="9dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="16dp"
+        android:text="SHOW LIFE STORY LINES"
+        app:layout_constraintBottom_toTopOf="@+id/familyTreeLines"
+        app:layout_constraintEnd_toEndOf="@+id/lifeLines"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lifeLines" />
+
+    <Switch
+        android:id="@+id/familyTreeLines"
+        android:layout_width="190dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginStart="15dp"
+        android:text="FAMILY TREE LINES"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toStartOf="@+id/spinner3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginStart="1dp"
+        android:text="SHOW TREE LINES"
+        app:layout_constraintBottom_toTopOf="@+id/spouseLines"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="@+id/familyTreeLines"
+        app:layout_constraintTop_toBottomOf="@+id/familyTreeLines" />
+
+    <Switch
+        android:id="@+id/spouseLines"
+        android:layout_width="187dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="18dp"
+        android:text="SPOUSE LINES"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toStartOf="@+id/spinner4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="21dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginStart="1dp"
+        android:text="SHOW SPOUSE LINES"
+        app:layout_constraintBottom_toTopOf="@+id/mapType"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/familyTreeLines"
+        app:layout_constraintTop_toBottomOf="@+id/spouseLines" />
+
+    <TextView
+        android:id="@+id/mapType"
+        android:layout_width="201dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginStart="16dp"
+        android:text="MAP TYPE"
+        app:layout_constraintBottom_toTopOf="@+id/map"
+        app:layout_constraintEnd_toStartOf="@+id/spinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/map"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:text="BACKGROUND DISPLAY ON MAP"
+        app:layout_constraintBottom_toTopOf="@+id/reData"
+        app:layout_constraintEnd_toEndOf="@+id/reData"
+        app:layout_constraintStart_toStartOf="@+id/reData"
+        app:layout_constraintTop_toBottomOf="@+id/mapType" />
+
+    <TextView
+        android:id="@+id/reData"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginEnd="2dp"
+        android:text="RESYNC DATA"
+        app:layout_constraintBottom_toTopOf="@+id/doesntMatter"
+        app:layout_constraintEnd_toEndOf="@+id/logout"
+        app:layout_constraintStart_toStartOf="@+id/mapType"
+        app:layout_constraintTop_toBottomOf="@+id/map" />
+
+    <TextView
+        android:id="@+id/doesntMatter"
+        android:layout_width="0dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginStart="16dp"
+        android:text="FROM FAMILY MAP SERVICE"
+        app:layout_constraintBottom_toTopOf="@+id/logout"
+        app:layout_constraintEnd_toEndOf="@+id/logout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reData" />
+
+    <TextView
+        android:id="@+id/logout"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:layout_marginEnd="2dp"
+        android:text="LOGOUT"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="@+id/mapType"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/reData" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="66dp"
+        android:layout_marginStart="16dp"
+        android:text="RETURN TO LOGIN SCREEN"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logout" />
+
+    <Spinner
+        android:id="@+id/mapTypeSpinner"
+        android:layout_width="131dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="230dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.964"
+        app:layout_constraintStart_toEndOf="@+id/mapType"
+        app:layout_constraintTop_toBottomOf="@+id/spouseLinesSpinner" />
+
+    <Spinner
+        android:id="@+id/spouseLinesSpinner"
+        android:layout_width="136dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="45dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/mapTypeSpinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.963"
+        app:layout_constraintStart_toEndOf="@+id/spouseLines"
+        app:layout_constraintTop_toBottomOf="@+id/familyTreeLinesSpinner" />
+
+    <Spinner
+        android:id="@+id/familyTreeLinesSpinner"
+        android:layout_width="139dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="21dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/spouseLinesSpinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/familyTreeLines"
+        app:layout_constraintTop_toBottomOf="@+id/lifeLinesSpinner" />
+
+    <Spinner
+        android:id="@+id/lifeLinesSpinner"
+        android:layout_width="138dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="34dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/familyTreeLinesSpinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/lifeLines"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

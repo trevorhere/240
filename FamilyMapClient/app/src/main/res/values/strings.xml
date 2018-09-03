@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Family Map Server</string>
+    <string name="google_maps_API_KEY">AIzaSyAfqg1e-rpcyXp1yCVLbl6QtnAuM3MDeYw</string>
+
+<string-array name="colors">
+    <item>green</item>
+    <item>blue</item>
+    <item>red</item>
+</string-array>
+
+
+</resources>

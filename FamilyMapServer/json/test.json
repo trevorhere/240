@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "userName": "test",
+      "password": "test",
+      "email":    "test",
+      "firstName":"test",
+      "lastName": "test",
+      "gender":   "test",
+      "personID": "test"
+    }
+  ],
+  "persons": [
+    {
+      "firstName":  "test",
+      "lastName":   "test",
+      "gender":     "test",
+      "personID":   "test",
+      "spouse":     "test",
+      "descendant": "test"
+    }
+  ],
+  "events": [
+    {
+      "eventType":  "test",
+      "personID":   "test",
+      "city":       "test",
+      "latitude":   0.0,
+      "country":    "test",
+      "longitude":   0.0,
+      "year":        0,
+      "eventID":    "test",
+      "descendant": "test"
+    }
+  ]
+}
